@@ -26,7 +26,7 @@ const config = {
   editLink: { text: null },
   themeSwitch: false,
   footer: { component: null },
-  gitTimestamp: false,
+
   nextThemes: {
     defaultTheme: "dark",
   },
