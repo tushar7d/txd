@@ -13,7 +13,9 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {dropShadow: {
+    extend: {
+     
+      dropShadow: {
       glow: [
         "0 0px 20px rgba(255,255, 255, 0.35)",
         "0 0px 65px rgba(255, 255,255, 0.2)"
@@ -27,8 +29,23 @@ module.exports = {
       },
       animation: {
         text: "text 5s ease infinite",
+        blob: "blob 7s infinite",
       },
       keyframes: {
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(230px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-120px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "tranlate(0px, 0px) scale(1)",
+          },
+        },
         text: {
           "0%, 100%": {
             "background-size": "200% 200%",
