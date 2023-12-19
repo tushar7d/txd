@@ -21,7 +21,7 @@
     "title": "Timeline",
     "type": "page"
   },
-  
+
   
   "about": {
     "title": "About Me",
@@ -29,5 +29,5 @@
     "theme": {
       "typesetting": "article"
     }
-  }
-}
+    
+  }}

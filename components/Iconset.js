@@ -1,8 +1,9 @@
 let IconSet = ()=>{
     return(
-  <div className="flex items-baseline justify-center mx-auto text-xs md:justify-start lg:mt-0 ">
+  <div className="flex items-baseline justify-center  space-x-6 text-xs md:justify-start lg:mt-0 ">
+ 
                 <a
-                  className="mr-5 text-black no-underline dark:text-white "
+                  className=" text-black no-underline dark:text-white "
                   target="_blank"
                   href="https://www.linkedin.com/in/tushardebnath/"
                   aria-label="Linked In Profile"
@@ -22,7 +23,7 @@ let IconSet = ()=>{
                   </svg>
                 </a>
                 <a
-                  className="mr-5 text-black no-underline dark:text-white"
+                  className=" text-black no-underline dark:text-white"
                   target="_blank"
                   href="https://dribbble.com/tushardebnath"
                   aria-label="Dribble Profile"
@@ -42,7 +43,7 @@ let IconSet = ()=>{
                   </svg>
                 </a>
                 <a
-                  className="mr-5 text-black no-underline dark:text-white"
+                  className=" text-black no-underline dark:text-white"
                   target="_blank"
                   href="https://github.com/tushar7d"
                   aria-label="Github Profile"
