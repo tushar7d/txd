@@ -68,6 +68,9 @@ article.nextra-body-typesetting-article h4 {
   }
 }
 @layer components {
+  .nextra-nav-container{
+    @apply  font-serif
+  }
   .top-container {
     @apply flex scrollbar-hide;
   }

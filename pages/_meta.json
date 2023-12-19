@@ -17,6 +17,10 @@
     "title": "Writing",
     "type": "page"
   },
+  "timeline": {
+    "title": "Timeline",
+    "type": "page"
+  },
   
   
   "about": {
