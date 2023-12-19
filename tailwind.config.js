@@ -46,6 +46,20 @@ module.exports = {
             transform: "tranlate(0px, 0px) scale(1)",
           },
         },
+        blobr: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(-230px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(120px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "tranlate(0px, 0px) scale(1)",
+          },
+        },
         text: {
           "0%, 100%": {
             "background-size": "200% 200%",
@@ -59,5 +73,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

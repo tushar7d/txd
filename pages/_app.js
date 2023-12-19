@@ -42,13 +42,7 @@ const recoleta = localFont({
 export default function App({ Component, pageProps }) {
   return (
     <main className={` ${recoleta.variable} relative`}>
-      <div className=" fixed opacity-80 mix-blend-overlay left-10  w-[500px] h-[500px]  animate-[blob 7s infinite]  filter bg-red-500 -z-10   rounded-full blur-3xl " />
-      <div className=" fixed opacity-80 mix-blend-overlay  left-[100px] w-[500px] h-[500px] animate-blob delay-700  filter bg-purple-500 -z-10  rounded-full blur-3xl" />
-      <div className=" fixed opacity-80 mix-blend-overlay  left-[400px] w-[600px] h-[600px] animate-blob delay-700  filter bg-blue-500 -z-10  rounded-full blur-3xl" />
-
-      <div className=" fixed opacity-80 mix-blend-overlay right-10  w-[500px] h-[500px]  animate-[blob 7s infinite]  filter bg-cyan-500 -z-10   rounded-full blur-3xl " />
-      <div className=" fixed opacity-80 mix-blend-overlay  right-[400px] w-[500px] h-[500px] animate-blob delay-700  filter bg-blue-500 -z-10  rounded-full blur-3xl" />
-      <div className=" fixed opacity-80 mix-blend-overlay  right-[100px] w-[600px] h-[600px] animate-blob delay-700  filter bg-green-600 -z-10  rounded-full blur-3xl" />
+     
       <Component {...pageProps} />
     </main>
   );

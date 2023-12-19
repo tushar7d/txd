@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-
 let CardHeader = (props) => {
   return (
     <div className="mt-12 text-center h-[150px]">
@@ -18,18 +17,19 @@ let Heading = (props) => {
   );
 };
 
-
 let Home = () => {
   return (
     <section className=" max-w-[1140px] mx-auto mt-24 px-6 md:px-0  text-black">
+       <div className=" fixed opacity-80 mix-blend-overlay left-10  w-[500px] h-[500px]  animate-[blob 7s infinite]  filter bg-red-500 -z-10   rounded-full blur-3xl " />
+      <div className=" fixed opacity-80 mix-blend-overlay  left-[100px] w-[500px] h-[500px] animate-blob delay-700  filter bg-purple-500 -z-10  rounded-full blur-3xl" />
+      <div className=" fixed opacity-80 mix-blend-overlay  left-[400px] w-[600px] h-[600px] animate-blob delay-700  filter bg-blue-500 -z-10  rounded-full blur-3xl" />
 
-
-
-
-      
+      <div className=" fixed opacity-80 mix-blend-overlay right-10  w-[500px] h-[500px]  animate-[blob 7s infinite]  filter bg-red-300 -z-10   rounded-full blur-3xl " />
+     
+      <div className=" fixed opacity-80 mix-blend-overlay  right-[100px] w-[800px] h-[800px] animate-blob delay-700  filter bg-purple-400 -z-10  rounded-full blur-3xl" />
       <div
         className={
-          "  mt-4 dark:bg-[#1F1F1F] bg-gray-50 md:mx-0 md:mt-0 rounded-2xl sm:min-h-[320px] p-8    md:flex md:justify-between md:items-center   "
+          "  mt-4  md:mx-0 md:mt-0 rounded-2xl sm:min-h-[320px]     md:flex md:justify-between md:items-center   "
         }
       >
         <div className="mb-4 md:mb-0 md:order-last">
@@ -40,24 +40,25 @@ let Home = () => {
         </div>
 
         <div className="flex flex-col justify-between text-center  md:text-left md:w-[70%] ">
-          <h1 className="mb-2 font-serif text-6xl font-black text-transparent select-none md:text-7xl animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text"  >Hello Everyone!</h1>
+          <h1 className="mb-2 font-serif text-6xl font-black text-transparent select-none md:text-7xl animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text">
+            Hello Everyone!
+          </h1>
           <div className="space-y-2 dark:text-white">
             <p className="mt-3 text-lg select-none">
-              I am Tushar Debnath a product designer and design technologist with 10+ years of
-              experience building products loved by millions of people across
-              the globe
+              I am Tushar Debnath a product designer and design technologist
+              with 10+ years of experience building products loved by millions
+              of people across the globe
             </p>
           </div>
-          
+
           <div>
             <Link href={"/about"}>
-          <button className="px-6 py-3 mx-auto mt-6 mb-6 bg-white rounded-full">More about me</button></Link>
-       
+              <button className="px-6 py-3 mx-auto mt-6 mb-6 bg-white rounded-full">
+                More about me
+              </button>
+            </Link>
           </div>
-         
-        
         </div>
-       
       </div>
 
       <div className="mb-12 " />
@@ -102,7 +103,7 @@ let Home = () => {
             </div>
           </div>
         </Link>
-      
+
         <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-blue-400 to-blue-900 group hover:scale-105">
           <CardHeader t="Expedia" b="Car Rental" />
           <div className="relative w-full h-full ">
@@ -146,9 +147,6 @@ let Home = () => {
           </div>
         </div>
       </div>
-     
-
-     
     </section>
   );
 };
