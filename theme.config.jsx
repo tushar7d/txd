@@ -1,7 +1,8 @@
 import React from "react";
 
 import Logo from "./components/logo";
-import Iconset from './components/Iconset'
+
+import Navbar from "./components/Navbar";
 const config = {
   head: () => {
     return (
@@ -26,7 +27,7 @@ const config = {
   editLink: { text: null },
   themeSwitch: false,
   footer: { component: null },
-navbar:{extraContent:Iconset},
+  navbar:{component: Navbar},
   nextThemes: {
     defaultTheme: "dark",
   },
