@@ -66,7 +66,7 @@ let Home = () => {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <Link href="/work/expansion-india">
           <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-b from-violet-950 to-indigo-600 overflow-clip group hover:scale-105">
-            <CardHeader t="Revolut" b="Expanding to India" />
+            <CardHeader t="Revolut" b="Onboarding" />
 
             <div className="relative w-full h-full ">
               <div>
@@ -133,7 +133,7 @@ let Home = () => {
           </div>
         </div>
         <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-red-400 to-purple-700 hover:scale-105 group">
-          <CardHeader t="Revolut" b="Security Hub" />
+          <CardHeader t="Revolut" b="Open Banking" />
           <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 ">
             <div>
               <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   group-hover:translate-x-8 right-0 top-12 group-hover:rotate-6 transition ease-out duration-300   " />
