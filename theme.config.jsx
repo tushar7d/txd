@@ -2,7 +2,6 @@ import React from "react";
 
 import Logo from "./components/logo";
 
-import Navbar from "./components/Navbar";
 const config = {
   head: () => {
     return (
@@ -27,7 +26,6 @@ const config = {
   editLink: { text: null },
   themeSwitch: false,
   footer: { component: null },
-  navbar:{component: Navbar},
   nextThemes: {
     defaultTheme: "dark",
   },

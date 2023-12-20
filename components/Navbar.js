@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 let Navbar = () => {
   const router = useRouter()
   return (
-    <div  className="fixed flex justify-between items-center max-w-[1200px]  inset-x-0 mx-auto  z-50 px-4 py-12">
+    <div  className="fixed flex justify-between items-center max-w-[1200px]  inset-x-0 mx-auto  z-50 px-4 py-3 rounded-full bg-gray-900 mt-12">
     
 
   <Logo />
