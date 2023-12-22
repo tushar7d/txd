@@ -20,7 +20,7 @@ export function BlogHeader() {
 export function BlogIndex() {
   return getPagesUnderRoute("/blog").map((page) => {
     return (
-      <div key={page.route} className="mb-10 p-4 ">
+      <div key={page.route} className="mb-10 p-4  border-b  border-white">
         <Link href={page.route} >
 
         <h1 className="text-2xl">
