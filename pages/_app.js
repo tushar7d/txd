@@ -1,5 +1,5 @@
 import "../style.css";
-
+import { ClerkProvider } from "@clerk/nextjs";
 import localFont from "next/font/local";
 
 const recoleta = localFont({
@@ -41,9 +41,15 @@ const recoleta = localFont({
 
 export default function App({ Component, pageProps }) {
   return (
+    <ClerkProvider {...pageProps} appearance={{
+      elements: {
+        footer: "hidden",
+      },
+    }}>
     <main className={` bg-black  ${recoleta.variable} relative`}>
      
       <Component {...pageProps} />
     </main>
+    </ClerkProvider>
   );
 }
