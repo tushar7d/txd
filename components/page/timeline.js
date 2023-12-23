@@ -19,14 +19,9 @@ let Timeline = () => {
           </svg>
         </div>
         <div className="timeline-start md:text-end mb-10">
-          <time className="font-mono italic">1984</time>
-          <div className="text-lg font-black">First Macintosh computer</div>
-          The Apple Macintosh—later rebranded as the Macintosh 128K—is the
-          original Apple Macintosh personal computer. It played a pivotal role
-          in establishing desktop publishing as a general office function. The
-          motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were
-          housed in a beige case with integrated carrying handle; it came with a
-          keyboard and single-button mouse.
+          <time className="font-mono italic">December,2023</time>
+          <div className="text-lg font-black">Launch of new website</div>
+          Launched a brand new site
         </div>
         <hr />
       </li>
@@ -47,7 +42,7 @@ let Timeline = () => {
           </svg>
         </div>
         <div className="timeline-end mb-10">
-          <time className="font-mono italic">1998</time>
+          <time className="font-mono italic">November,2023</time>
           <div className="text-lg font-black">iMac</div>
           iMac is a family of all-in-one Mac desktop computers designed and
           built by Apple Inc. It has been the primary part of Apple's consumer

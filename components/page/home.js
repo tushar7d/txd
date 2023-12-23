@@ -19,17 +19,10 @@ let Heading = (props) => {
 
 let Home = () => {
   return (
-    <section className=" max-w-[1140px] mx-auto mt-24 px-6 md:px-0  text-black">
-       <div className=" fixed opacity-80 mix-blend-overlay left-10  w-[500px] h-[500px]  animate-[blob 7s infinite]  filter bg-red-500 -z-10   rounded-full blur-3xl " />
-      <div className=" fixed opacity-80 mix-blend-overlay  left-[100px] w-[500px] h-[500px] animate-blob delay-700  filter bg-purple-500 -z-10  rounded-full blur-3xl" />
-      <div className=" fixed opacity-80 mix-blend-overlay  left-[400px] w-[600px] h-[600px] animate-blob delay-700  filter bg-blue-500 -z-10  rounded-full blur-3xl" />
-
-      <div className=" fixed opacity-80 mix-blend-overlay right-10  w-[500px] h-[500px]  animate-[blob 7s infinite]  filter bg-red-300 -z-10   rounded-full blur-3xl " />
-     
-      <div className=" fixed opacity-80 mix-blend-overlay  right-[100px] w-[800px] h-[800px] animate-blob delay-700  filter bg-purple-400 -z-10  rounded-full blur-3xl" />
+    <section className=" max-w-[1140px] mx-auto mt-24 md:px-0    text-black">
       <div
         className={
-          "  mt-4  md:mx-0 md:mt-0 rounded-2xl sm:min-h-[320px]     md:flex md:justify-between md:items-center   "
+          "  mt-4  md:mx-0 md:mt-0 rounded-2xl sm:min-h-[320px]  md:flex md:justify-between md:items-center   "
         }
       >
         <div className="mb-4 md:mb-0 md:order-last">
@@ -44,7 +37,7 @@ let Home = () => {
             Hello Everyone!
           </h1>
           <div className="space-y-2 dark:text-white">
-            <p className="mt-3 text-lg select-none">
+            <p className="mt-3 text-xl md:text-2xl select-none">
               I am Tushar Debnath a product designer and design technologist
               with 10+ years of experience building products loved by millions
               of people across the globe
@@ -53,7 +46,7 @@ let Home = () => {
 
           <div>
             <Link href={"/about"}>
-              <button className="px-6 py-3 mx-auto mt-6 mb-6 bg-white rounded-full">
+              <button className="px-6 py-3 mx-auto mt-6 mb-6 bg-white  drop-shadow-lg  transition transform hover:subpixel-antialiased  hover:scale-105   rounded-full tetx-xl text-black font-serif font-semibold">
                 More about me
               </button>
             </Link>

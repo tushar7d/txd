@@ -32,6 +32,7 @@ module.exports = {
         blob: "blob 7s infinite",
       },
       keyframes: {
+        
         blob: {
           "0%": {
             transform: "translate(0px, 0px) scale(1)",
