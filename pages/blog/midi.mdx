@@ -3,12 +3,18 @@ title: Shortcut Machine
 date: 2021/12/09
 description: How to run Figma shortcuts using Midi keyboard
 ---
+
+
+
+# Shortcut machine 
+
 Have you ever wanted to do something quickly in Figma but can’t remember the shortcut? Or have you ever wanted to speed things up by having dedicated physical key for everyday actions?
 
 Well, now you can have dedicated physical keys for common shortcut keys. All you need is a midi keyboard or any sort of USB midi device with buttons on it, two opensource Software and a bit of Setup and you are good to go.
 
-## Here is what you need
-### The hardware — USB Midi keyboard/Controller
+# Here is what you need
+
+## The hardware — USB Midi keyboard/Controller
 If you don’t have one you can quickly get one online here are a few that I like.
 
 MPK Mini mkII
@@ -21,17 +27,17 @@ novationmusic.com
 
 or any other midi controller that you can get your hands on.
 
-### The Software
+## The Software
 
-#### MIDI Loupe
+### MIDI Loupe
 MIDI Loupe allows you to monitor and log MIDI messages from one or multiple MIDI devices. It is mostly useful for…
 apps.apple.com
 
-#### MidiStroke
+### MidiStroke
 MidiStroke Converts a midi signal to Keyboard events. Download midiStroke (52 KB) A midiStroke beta for macOS Catalina is now available. You’ll need to give the app…
 charlie-roberts.com
 
-## Before we start
+# Before we start
 So before we start with the Setup, we need to understand how this works.
 
 The Midi devices send out a midi signal to the computer each time you press a key.
@@ -47,27 +53,28 @@ As shown above, Midi Stroke (our translator) listens to the incoming midi signal
 
 So basically every time you press a key an appropriate keyboard shortcut (configured by you) will be initiated.
 
-## Let's get started
-### Step 0
+# Let's get started
+
+## Step 0
 Open Figma and open the shortcut panel and make a list of all the shortcuts you would like to have a dedicated key for.
 
 Protip: you can find the panel in the help menu or by using the shortcut key
 
 
-### Step 1
+## Step 1
 Connect your midi controller to the computer and make sure you have both midi loupe and ministroke installed.
 
 Now Open MidiLoupe, select your midi device. Press a few keys to see if you are getting a signal.
 
 
 
-### Step 2
+## Step 2
 Now that we know everything is working its time to think of what key to map for what shortcut.
 
 I did it by marking out my keyboard with a marker. (you can skip this)
 
 
-### Step 3
+## Step 3
 This is the most important step. This is where I will show you how to set up midi stroke to send keyboard shortcuts to Figma (Pro tip: or any app )
 
 Open midi loupe and press the key on the midi you want to assign. you will get a message on like the one you see below.

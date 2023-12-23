@@ -10,7 +10,8 @@
     "title": "Work",
     "theme": {
       "breadcrumb": false,
-      "sidebar": false
+      "sidebar": false,
+      "typesetting": "article"
     }
   },
   "blog": {
@@ -22,12 +23,11 @@
     "type": "page"
   },
 
-  
   "about": {
     "title": "About",
     "type": "page",
     "theme": {
       "typesetting": "article"
     }
-    
-  }}
+  }
+}
