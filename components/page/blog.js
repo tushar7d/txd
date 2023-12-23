@@ -8,7 +8,7 @@ import Link from "next/link";
     return (
       <div className="max-w-screen-lg mx-auto pt-4 pb-8 mb-6 mt-12">
         
-         <div className="font-bold leading-tight font-serif text-5xl text-center animate-text  text-transparent select-none bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text">Writing</div>
+         <div className="font-bold leading-tight font-serif text-5xl text-center text-white">Writing</div>
         
       
       </div>

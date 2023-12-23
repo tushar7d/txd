@@ -1,6 +1,7 @@
 import React from "react";
 
 import Logo from "./components/logo";
+import NavBar from './components/Navbar'
 
 const config = {
   head: () => {
@@ -26,6 +27,7 @@ const config = {
   editLink: { text: null },
   themeSwitch: false,
   footer: { component: null },
+ 
   nextThemes: {
     defaultTheme: "dark",
   },

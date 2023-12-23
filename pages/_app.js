@@ -46,7 +46,7 @@ export default function App({ Component, pageProps }) {
         footer: "hidden",
       },
     }}>
-    <main className={` bg-black  ${recoleta.variable} relative`}>
+    <main  className={` bg-black  ${recoleta.variable} relative`}>
      
       <Component {...pageProps} />
     </main>

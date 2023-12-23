@@ -64,13 +64,15 @@ article.nextra-body-typesetting-article h4 {
 
 @layer base {
   body {
-    @apply bg-white;
+    @apply bg-black;
+  }
+  h2  {
+    @apply  font-serif;
   }
 }
 @layer components {
-  .nextra-nav-container{
-    @apply  font-serif
-  }
+
+
   .top-container {
     @apply flex scrollbar-hide;
   }
