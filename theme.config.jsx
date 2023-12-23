@@ -1,7 +1,7 @@
 import React from "react";
 
 import Logo from "./components/logo";
-import NavBar from './components/Navbar'
+
 
 const config = {
   head: () => {
@@ -25,9 +25,9 @@ const config = {
   search: { component: null },
   feedback: { content: null },
   editLink: { text: null },
-  themeSwitch: false,
+  themeSwitch: {component:null},
   footer: { component: null },
- 
+
   nextThemes: {
     defaultTheme: "dark",
   },

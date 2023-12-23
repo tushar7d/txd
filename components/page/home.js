@@ -39,8 +39,7 @@ let Home = () => {
           <div className="space-y-2 dark:text-white">
             <p className="mt-3 text-xl md:text-2xl select-none">
               I am Tushar Debnath a product designer and design technologist
-              with 10+ years of experience building products loved by millions
-              of people across the globe
+              with 10+ years of experience building products, design systems and design tools
             </p>
           </div>
 
@@ -59,7 +58,7 @@ let Home = () => {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <Link href="/work/expansion-india">
           <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-b from-violet-950 to-indigo-600 overflow-clip group hover:scale-105">
-            <CardHeader t="Revolut" b="Onboarding" />
+            <CardHeader t="Revolut" b="Expansion" />
 
             <div className="relative w-full h-full ">
               <div>
