@@ -63,6 +63,9 @@ article.nextra-body-typesetting-article h4 {
 
 
 @layer base {
+  html {
+    @apply bg-[#111111];
+  }
   body {
     @apply bg-[#111111] scrollbar-hide;
   }

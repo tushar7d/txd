@@ -27,7 +27,7 @@ const config = {
   editLink: { text: null },
   themeSwitch: {component:null},
   footer: { component: null },
-
+navbar:{component:null},
   nextThemes: {
     defaultTheme: "dark",
   },
