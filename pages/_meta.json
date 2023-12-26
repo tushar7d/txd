@@ -8,11 +8,7 @@
   },
   "work": {
     "title": "Work",
-    "theme": {
-      "breadcrumb": false,
-      "sidebar": false,
-      "typesetting": "article"
-    }
+    "type": "page"
   },
   "blog": {
     "title": "Writing",

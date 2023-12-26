@@ -19,6 +19,14 @@ let Navbar = () => {
           </a>
           <a
             className={`${
+              router.pathname == "/work" ? "font-semibold" : "text-white"
+            }`}
+            href="/work"
+          >
+            Work
+          </a>
+          <a
+            className={`${
               router.pathname == "/blog" ? "font-semibold" : "text-white"
             }`}
             href="/blog"
