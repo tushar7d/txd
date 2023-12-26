@@ -6,9 +6,9 @@ import Link from "next/link";
 
  function BlogHeader() {
     return (
-      <div className="max-w-screen-lg mx-auto pt-4 pb-8 mb-6 mt-12">
+      <div className="max-w-screen-lg pt-4 pb-8 mx-auto mt-12 mb-6">
         
-         <div className="font-bold leading-tight font-serif text-5xl text-center text-white">Writing</div>
+         <div className="font-serif text-5xl font-bold leading-tight text-center text-white">Writing</div>
         
       
       </div>
@@ -18,13 +18,13 @@ import Link from "next/link";
    function BlogIndex() {
     return getPagesUnderRoute("/blog").map((page) => {
       return (
-        <div key={page.route} className="mb-3 p-12 bg-white/5  hover:bg-white/10 rounded-xl hover:cursor-pointer ">
+        <div key={page.route} className="p-12 mb-3 bg-white/5 hover:bg-white/10 rounded-xl hover:cursor-pointer ">
           <Link href={page.route} >
           {page.frontMatter?.date ? (
-            <p className="opacity-50 text-sm mb-3">{page.frontMatter.date}</p>
+            <p className="mb-3 text-sm opacity-50">{page.frontMatter.date}</p>
           ) : null}
   
-          <h1 className="text-2xl  font-serif font-semibold ">
+          <h1 className="font-serif text-2xl font-semibold ">
             {page.meta?.title || page.frontMatter?.title || page.name}
          </h1>
           <p className="opacity-80">

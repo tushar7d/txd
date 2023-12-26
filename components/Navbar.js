@@ -23,7 +23,7 @@ let Navbar = () => {
             }`}
             href="/blog"
           >
-            Blog
+            Writing
           </a>
           <a
             className={`${
