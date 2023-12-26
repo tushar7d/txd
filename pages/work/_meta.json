@@ -1,8 +1,10 @@
 {
   "*": {
-    
+    "display": "hidden",
     "theme": {
-      "typesetting": "article"
+      "toc": false,
+      "sidebar": false,
+      "pagination": false
     }
   },
     "expansion-india":"Expanding to India",
