@@ -47,7 +47,7 @@ export default function App({ Component, pageProps }) {
       },
     }}>
       <Navbar />
-    <main  className={` bg-[#111111]  ${recoleta.variable} relative scrollbar-hide`}>
+    <main  className={` bg-[#111111]  ${recoleta.variable} relative scrollbar-hide pt-[80px]`}>
 
       <Component {...pageProps} />
     </main>

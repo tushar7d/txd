@@ -8,10 +8,8 @@
   },
   "work": {
     "title": "Work",
-    "type": "page",
-    "theme": {
-      "layout": "full"
-    }
+    "type": "page"
+  
   },
   "blog": {
     "title": "Writing",
