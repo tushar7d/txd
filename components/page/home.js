@@ -105,64 +105,82 @@ let ZomTrack = () => {
   );
 };
 
-let ExpCar = ()=>{
-  return(<Link href="/work/expedia">
-  <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-blue-400 to-blue-900 group hover:scale-105">
-    <CardHeader t="Expedia" b="Car Rental" />
-    <div className="relative w-full h-full ">
-      <div>
-        <div className="bg-[url('/images/car.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   group-hover:translate-x-12 right-0 top-16  transition ease-out duration-300   " />
+let ExpCar = () => {
+  return (
+    <Link href="/work/expedia">
+      <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-blue-400 to-blue-900 group hover:scale-105">
+        <CardHeader t="Expedia" b="Car Rental" />
+        <div className="relative w-full h-full ">
+          <div>
+            <div className="bg-[url('/images/car.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   group-hover:translate-x-12 right-0 top-16  transition ease-out duration-300   " />
+          </div>
+          <div>
+            <div className="bg-[url('/images/car.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0 right-0 group-hover:-translate-x-12 top-16   transition ease-out duration-300  " />
+          </div>
+          <div>
+            <div className="bg-[url('/images/car.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto left-0 right-0 top-4 transition ease-out duration-300" />
+          </div>
+        </div>
       </div>
-      <div>
-        <div className="bg-[url('/images/car.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0 right-0 group-hover:-translate-x-12 top-16   transition ease-out duration-300  " />
-      </div>
-      <div>
-        <div className="bg-[url('/images/car.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto left-0 right-0 top-4 transition ease-out duration-300" />
+    </Link>
+  );
+};
+
+let ZomPartner = () => {
+  return (
+    <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-emerald-400 to-blue-700 hover:scale-105 group">
+      <CardHeader t="Zomato" b="Partner App" />
+      <div className="relative w-full h-full ">
+        <div>
+          <div className="bg-[url('/images/medal.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto   left-0 right-0 group-hover:translate-x-12    top-20  transition ease-out duration-300   " />
+        </div>
+        <div>
+          <div className="bg-[url('/images/medal.png')]  w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto   left-0 right-0 group-hover:translate-x-2 top-12  transition ease-out duration-300  " />
+        </div>
+        <div>
+          <div className="bg-[url('/images/medal.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto group-hover:-translate-x-12  left-0 right-0 top-4 transition ease-out duration-300" />
+        </div>
       </div>
     </div>
-  </div>
-</Link>)
-}
-let Home = () => {
+  );
+};
+let RevOpb = () => {
   return (
-    <section className=" max-w-[1140px] mx-auto mt-24 md:px-0    text-black">
-      <AboutMe />
-
-      <Heading className="mt-12">Case studies</Heading>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <ExpansionInd />
-        <RevSnap />
-        <ZomTrack />
-        <ExpCar />
-        <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-emerald-400 to-blue-700 hover:scale-105 group">
-          <CardHeader t="Zomato" b="Partner App" />
-          <div className="relative w-full h-full ">
-            <div>
-              <div className="bg-[url('/images/medal.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto   left-0 right-0 group-hover:translate-x-12    top-20  transition ease-out duration-300   " />
-            </div>
-            <div>
-              <div className="bg-[url('/images/medal.png')]  w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto   left-0 right-0 group-hover:translate-x-2 top-12  transition ease-out duration-300  " />
-            </div>
-            <div>
-              <div className="bg-[url('/images/medal.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto group-hover:-translate-x-12  left-0 right-0 top-4 transition ease-out duration-300" />
-            </div>
-          </div>
+    <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-red-400 to-purple-700 hover:scale-105 group">
+      <CardHeader t="Revolut" b="Open Banking" />
+      <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 ">
+        <div>
+          <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   group-hover:translate-x-8 right-0 top-12 group-hover:rotate-6 transition ease-out duration-300   " />
         </div>
-        <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-red-400 to-purple-700 hover:scale-105 group">
-          <CardHeader t="Revolut" b="Open Banking" />
-          <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 ">
-            <div>
-              <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   group-hover:translate-x-8 right-0 top-12 group-hover:rotate-6 transition ease-out duration-300   " />
-            </div>
-            <div>
-              <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0 right-0 group-hover:-translate-x-8 top-12 group-hover:-rotate-6 transition ease-out duration-300  " />
-            </div>
-            <div>
-              <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto left-0 right-0 top-4 transition ease-out duration-300" />
-            </div>
-          </div>
+        <div>
+          <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0 right-0 group-hover:-translate-x-8 top-12 group-hover:-rotate-6 transition ease-out duration-300  " />
+        </div>
+        <div>
+          <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto left-0 right-0 top-4 transition ease-out duration-300" />
         </div>
       </div>
+    </div>
+  );
+};
+let SectionCasestudy = () => {
+  return (
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <ExpansionInd />
+      <RevSnap />
+      <ZomTrack />
+      <ExpCar />
+      <ZomPartner />
+      <RevOpb />
+    </div>
+  );
+};
+
+let Home = () => {
+  return (
+    <section className=" max-w-[1140px] mx-auto mt-24 md:px-0 text-black">
+      <AboutMe />
+      <Heading className="mt-12">Case studies</Heading>
+      <SectionCasestudy />
     </section>
   );
 };
