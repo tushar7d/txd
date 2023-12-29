@@ -2,12 +2,20 @@
 
 ## Introduction
 
-Expedia, one of the world's leading online travel agencies, continually strives to improve its user experience and provide customers with transparent, reliable, and user-friendly services. In this case study, we will explore how Expedia successfully tackled an issue related to car rental selection cards in its booking flow. The problem was the lack of differentiation between seemingly identical car rental options that varied in price due to attributes such as cancellation policies. This inconsistency led to customer confusion and eroded trust in the platform. To address this issue, Expedia undertook a project to redesign the car rental selection cards and provide users with clear, comparative information about the pricing factors.
+Expedia, one of the world's leading online travel agencies. In this case study, we will explore how Expedia improved their rental car booking
+flow. 
 
 ## Problem Statement
+Expedia users struggled to differentiate between car rental options from the same vendor with similar names and features
+but differing prices. 
 
-The main problem Expedia faced was that users struggled to differentiate between car rental options from the same vendor with similar names and features but differing prices. This confusion often led users to assume that Expedia was showing different prices for identical cars, damaging their trust in the platform. The challenge was to present the information in a way that helped users understand why these cars had different prices and make well-informed choices while improving their confidence in Expedia.
+This confusion often led users to assume that Expedia was showing different prices for identical cars, damaging their trust in 
+the platform. 
 
+The challenge was to present the information in a way that helped users understand why these cars had different prices and make well-informed
+choices while improving their confidence in Expedia.
+
+![Problem](/ecr/pr1.png)
 ## Objectives
 
 1. **Enhance User Trust**: Rebuild user trust by providing transparent and consistent information about car rental options.
@@ -15,48 +23,41 @@ The main problem Expedia faced was that users struggled to differentiate between
 3. **Encourage Informed Decisions**: Assist users in making informed choices by highlighting the differences and advantages of each car.
 4. **Optimize User Experience**: Redesign car selection cards for a more intuitive and user-friendly interface.
 
-## Approach
+## Solution
 
-### 1. User Research
+### Approach 1
 
-Expedia began by conducting extensive user research, including surveys, interviews, and usability testing, to understand how users perceived the car rental selection cards and what information they found valuable.
+**Upfront Approach**
+This Approach shows all the options directly on the search result card. All the options are stacked one below the other the cheapest option on top.
 
-### 2. Redesign Car Selection Cards
+![Approach One](/ecr/ap1.png)
 
-The design team at Expedia came up with a new format for car selection cards, which included:
 
-- **Clear Differentiation**: Each car option from the same vendor was presented on its own card, making it visually distinct from others.
 
-- **Comparative Information**: Key attributes such as cancellation policies, additional features, and mileage limits were displayed side by side, allowing users to compare different options at a glance.
 
-- **Price Explanation**: A brief explanation was added to each card, describing why the price varied. For example, "Higher price due to flexible cancellation policy."
+### Approach 2
 
-- **User-Friendly Icons**: Icons were used to represent different features and policies to make the information easily scannable.
+**Modal Approach**
+This Approach shows the cheapest option upfront(with a dedicated reserve button) on the Search result card while all the options can be viewed
+inside a modal by tapping on the "see all rates" button. All the options are stacked one below the other,  the cheapest option on top.
 
-- **Sort and Filter Options**: Users could sort and filter results based on their preferences, such as lowest price, highest rating, or most flexible cancellation policy.
+![Approach Two](/ecr/ap2.png)
 
-### 3. Testing and Iteration
 
-Expedia conducted A/B testing to compare the new card design with the old one. User feedback and behavior were closely monitored, and adjustments were made based on real-world usage.
 
-### 4. Education and Communication
+### Approach 3
+**Dithered Approach**
+This Approach shows the option on the Details page as opposed to the search result card on the other 2 options. The cheapest option is shown on the
+bottom bar. and can directly be reserved from there itself. Additional options can either be seen by scrolling down the page to the options card
+or by tapping on the "see all rates" button on the bottom bar.
 
-Expedia also launched an educational campaign to inform users about the new card format and the benefits of the changes made. This included blog posts, tooltips, and email updates.
+![Approach Two](/ecr/ap3.png)
 
-## Results
 
-The new card design and the accompanying changes had a significant impact:
 
-1. **Enhanced User Trust**: Users were more confident that they were making informed choices, which improved trust in Expedia.
+## prototypes
 
-2. **Improved User Understanding**: Users could now clearly see why car prices differed, leading to fewer misconceptions about Expedia's pricing practices.
-
-3. **Increased User Engagement**: Users were more likely to interact with the cards, compare options, and make selections that suited their needs.
-
-4. **Reduced Customer Service Inquiries**: The improved clarity of information led to a reduction in inquiries regarding price differences.
-
-5. **Positive User Feedback**: Users praised the new card format for its transparency and ease of use.
-
-## Conclusion
-
-By addressing the problem of indistinguishable car selection cards in the car rental booking flow, Expedia significantly improved its user experience and trustworthiness. The new card format, with clear differentiation and comparative information, helped users make informed choices and understand the reasons behind price variations. This case study demonstrates the power of user-centric design and iterative improvements in providing a better user experience and ultimately, a more successful online travel platform.
+<div className="mx-auto w-full mt-6 md:flex justify-start space-x-4  hidden">
+<iframe width={375} height={667} src="https://cars-concept.web.app/" ></iframe>
+</div>
+<a href="https://cars-concept.web.app/" target="_blank" className="text-center" >Open Prototype</a>
