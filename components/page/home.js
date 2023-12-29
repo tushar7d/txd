@@ -1,4 +1,46 @@
 import Link from "next/link";
+import { motion, useInView } from "framer-motion"
+import { useRef } from "react";
+
+let FadeIn = ({
+  children,
+  className,
+  noVertical,
+  delay,
+  viewTriggerOffset,
+})=>{
+  const ref = useRef(null);
+  const inView = useInView(ref, {
+    once: true,
+    margin: viewTriggerOffset ? "-128px" : "0px",
+  });
+  const fadeUpVariants = {
+    initial: {
+      opacity: 0,
+      y: noVertical ? 0 : 24,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+    },
+  };
+  return(
+<motion.div
+      animate={inView ? "animate" : "initial"}
+      className={className}
+      initial={false}
+      ref={ref}
+      transition={{
+        duration: 1,
+        delay: delay || 0,
+        ease: [0.21, 0.47, 0.32, 0.98],
+      }}
+      variants={fadeUpVariants}
+    >
+      {children}
+    </motion.div>
+  )
+}
 
 let AboutMe = (props) => {
   return (
@@ -52,7 +94,8 @@ let Heading = (props) => {
 let ExpansionInd = () => {
   return (
     <Link href="/work/expansion-india">
-      <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-b from-violet-950 to-indigo-600 overflow-clip group hover:scale-105">
+      <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card turbopackCardBg overflow-clip group hover:scale-105">
+       
         <CardHeader t="Revolut" b="Expansion" />
 
         <div className="relative w-full h-full ">
@@ -73,7 +116,7 @@ let ExpansionInd = () => {
 let RevSnap = () => {
   return (
     <Link href="/work/building-snap">
-      <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-fuchsia-700 to-cyan-950 group hover:scale-105">
+      <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card turbopackCardBg group hover:scale-105">
         <CardHeader t="Revolut" b="Building Snap" />
         <div className="bg-[url('/images/snapcov.png')]  w-[500px]  h-full md:h-full ml-24 md:ml-16  mb-4  bg-contain bg-no-repeat group-hover:-translate-x-8 transition ease-out duration-300" />
       </div>
@@ -83,7 +126,7 @@ let RevSnap = () => {
 let ZomTrack = () => {
   return (
     <Link href="/work/zomato">
-      <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-green-500 to-green-900 group hover:scale-105">
+      <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card turbopackCardBg group hover:scale-105">
         <CardHeader t="Zomato" b="Order Tracking" />
         <div className="relative w-full h-full ">
           <div>
@@ -104,7 +147,7 @@ let ZomTrack = () => {
 let ExpCar = () => {
   return (
     <Link href="/work/expedia">
-      <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-blue-400 to-blue-900 group hover:scale-105">
+      <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card turbopackCardBg group hover:scale-105">
         <CardHeader t="Expedia" b="Car Rental" />
         <div className="relative w-full h-full ">
           <div>
@@ -124,7 +167,7 @@ let ExpCar = () => {
 
 let ZomPartner = () => {
   return (
-    <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-emerald-400 to-blue-700 hover:scale-105 group">
+    <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card turbopackCardBg hover:scale-105 group">
       <CardHeader t="Zomato" b="Partner App" />
       <div className="relative w-full h-full ">
         <div>
@@ -142,7 +185,7 @@ let ZomPartner = () => {
 };
 let RevOpb = () => {
   return (
-    <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-red-400 to-purple-700 hover:scale-105 group">
+    <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card turbopackCardBg hover:scale-105 group">
       <CardHeader t="Revolut" b="Open Banking" />
       <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 ">
         <div>
@@ -161,27 +204,34 @@ let RevOpb = () => {
 let SectionCasestudy = () => {
   return (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <ExpansionInd />
-      <RevSnap />
-      <ZomTrack />
-      <ExpCar />
-      <ZomPartner />
-      <RevOpb />
+      
+     <FadeIn delay={0.5}> <ExpansionInd /> </FadeIn>
+     <FadeIn delay={0.6}> <RevSnap /> </FadeIn>
+     <FadeIn delay={0.7}> <ZomTrack /> </FadeIn>
+     <FadeIn delay={0.5}> <ExpCar /> </FadeIn>
+     <FadeIn delay={0.7}> <ZomPartner /> </FadeIn>
+     <FadeIn delay={0.9}> <RevOpb /> </FadeIn>
     </div>
   );
 };
 
 let Home = () => {
   return (
-    <section className=" max-w-[1140px] mx-auto mt-24 md:px-0 text-black">
+    <section className="  max-w-[1140px] mx-auto mt-24 md:px-0 text-black">
+      <FadeIn delay={0.2}>
       <AboutMe
         h="Hello Everyone!"
         d="I am Tushar Debnath a product designer and design technologist with
             10+ years of experience building products, design systems and design
             tools"
       />
+      </FadeIn>
+      <FadeIn delay={0.5}>
       <Heading className="mt-12">Case studies</Heading>
       <SectionCasestudy />
+      </FadeIn>
+
+     
     </section>
   );
 };
