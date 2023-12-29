@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-let AboutMe = () => {
+let AboutMe = (props) => {
   return (
     <div
       className={
@@ -16,14 +16,10 @@ let AboutMe = () => {
 
       <div className="flex flex-col justify-between text-center  md:text-left md:w-[70%] ">
         <h1 className="mb-2 font-serif text-6xl font-black text-transparent select-none md:text-7xl animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text">
-          Hello Everyone!
+          {props.h}
         </h1>
         <div className="space-y-2 dark:text-white">
-          <p className="mt-3 text-xl md:text-2xl select-none">
-            I am Tushar Debnath a product designer and design technologist with
-            10+ years of experience building products, design systems and design
-            tools
-          </p>
+          <p className="mt-3 text-xl md:text-2xl select-none">{props.d}</p>
         </div>
 
         <div>
@@ -178,7 +174,12 @@ let SectionCasestudy = () => {
 let Home = () => {
   return (
     <section className=" max-w-[1140px] mx-auto mt-24 md:px-0 text-black">
-      <AboutMe />
+      <AboutMe
+        h="Hello Everyone!"
+        d="I am Tushar Debnath a product designer and design technologist with
+            10+ years of experience building products, design systems and design
+            tools"
+      />
       <Heading className="mt-12">Case studies</Heading>
       <SectionCasestudy />
     </section>

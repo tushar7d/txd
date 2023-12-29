@@ -1,47 +1,34 @@
----
-title: Shortcut Machine
-date: 2021/12/09
-description: How to run Figma shortcuts using Midi keyboard
----
+# Introduction
+Snap is an Internal tool I designed & developed to address the challenges faced by the expansion team in ensuring a consistent and
+seamless user experience across different countries, languages, devices, and color modes.
 
-# Revolut Snap
+This tool serves as a centralized platform, providing designers and product managers with a single source of truth for the live status
+and visual representation of the app's various flows
 
-## Context
+# Context
+As a member of the expansion team, the primary responsibility is to create and implement flows that seamlessly function across
+diverse countries. The challenge lies in accommodating country-specific variations, language localizations, and ensuring
+a cohesive design that resonates with the cultural nuances of different regions.
 
-Revolut, a prominent financial services provider, offers a wide range of features through its mobile application. Ensuring the quality and consistency of the app across various devices, territories, and user scenarios is paramount. Traditional methods of testing and verification were insufficient, and reliance on Figma files for design and functionality validation was proving to be problematic due to update delays.
+# Problem
+The manual testing of flows for each region and language group is time-consuming and prone to oversight. Given the diverse
+requirements of each country and the need for language localization, it becomes challenging to validate the design comprehensively
+before launching it into the production environment.
 
-## Problem
 
-- The financial app's complexity demanded extensive testing, making it challenging to examine various scenarios across test devices and live accounts.
+# Solution
+The key idea was to generate screenshots of the flows under various conditions, including different countries, languages, devices,
+and both dark and light modes. These screenshots would serve as a visual representation of what is live on the app in the 
+production environment. You would be able to view these screenshot using a web app that will allow you to change parameters such
+as Device, color mode, langauge, region etc
 
-- Figma files, used for design reference, were not always up to date, leading to discrepancies between design and actual implementation.
+# Conclusion
+Snap has proven to be an invaluable asset for the expansion team, streamlining the testing and validation of design elements across
+different countries, languages, devices, and color modes. The automated approach not only enhances efficiency but also ensures a 
+more comprehensive and accurate assessment of the app
 
-- Localization issues were difficult to identify, impacting the app's user experience and compliance with various regional regulations.
 
-## Solution
+# My role
+I was responsible for the Conceptilization of the product and the design + devlopment of the Frontend for the web app. I had a lot of
+help from the my team engineers to help create the automations which take the screenshot and makes them available for the web app to consume. 
 
-To address these challenges, an in-house web application was developed as a comprehensive solution:
-
-- **Versatile Web App**: A web-based tool was created, allowing users to examine any flow, for any territory, on any supported device, with support for different screen sizes and platforms.
-
-- **Dark Mode and Light Mode Support**: The tool accommodated both dark and light modes, offering users a realistic representation of the app in different environments.
-
-- **Source of Truth**: The web application became the single source of truth, providing a real-time representation of the app's status and behavior.
-
-- **Integrated Testing Environment**: The tool allowed internal teams to perform controlled testing, eliminating the need for live accounts, and enabling extensive scenario analysis.
-
-- **Localization Checks**: The application was designed to help identify localization issues, ensuring a seamless user experience across diverse territories.
-
-## Outcome
-
-The implementation of this in-house tool had a profound impact on Revolut's app maintenance and quality assurance:
-
-- **Enhanced Quality**: The web application served as a dependable source of truth, ensuring that all stakeholders had access to the most current and accurate information about the app.
-
-- **Streamlined Workflow**: Designers, product owners, and internal operations teams found the tool invaluable in their daily workflow, reducing the reliance on outdated Figma files.
-
-- **Improved Localization**: Localization issues were identified and addressed promptly, leading to a better user experience and regulatory compliance across territories.
-
-- **Reduced Testing Challenges**: Testing and scenario analysis became more manageable, reducing the complexity of quality assurance for a multifaceted financial app.
-
-Overall, this in-house solution transformed the way Revolut's teams understood and managed their app, enhancing its quality and compliance while streamlining internal processes. It became a key asset in maintaining and improving the Revolut app, serving as a model for addressing similar challenges in the financial industry.
