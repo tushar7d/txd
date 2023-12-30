@@ -99,7 +99,7 @@ let ExpansionInd = () => {
   return (
     <Link href="/work/expansion-india">
       <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-white/5  overflow-clip group hover:scale-105">
-        <CardHeader t="Revolut" b="Expansion" />
+        <CardHeader t="Revolut" b="Building for India" />
 
         <div className="relative w-full h-full ">
           <div>
@@ -120,7 +120,7 @@ let RevSnap = () => {
   return (
     <Link href="/work/building-snap">
       <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-white/5 group hover:scale-105">
-        <CardHeader t="Revolut" b="Building Snap" />
+        <CardHeader t="Revolut" b="Snap App" />
         <div className="bg-[url('/images/snapcov.png')]  w-[500px]  h-full md:h-full ml-24 md:ml-16  mb-4  bg-contain bg-no-repeat md:group-hover:-translate-x-8 transition ease-out duration-300" />
       </div>
     </Link>
@@ -130,7 +130,7 @@ let ZomTrack = () => {
   return (
     <Link href="/work/zomato">
       <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-white/5 group hover:scale-105">
-        <CardHeader t="Zomato" b="Order Tracking" />
+        <CardHeader t="Zomato" b="Order Tracker" />
         <div className="relative w-full h-full ">
           <div>
             <div className="bg-[url('/images/track.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto   left-0 right-0 md:group-hover:translate-x-12    top-20  transition ease-out duration-300   " />
@@ -263,7 +263,7 @@ let SectionLogoSlider = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -306,12 +306,12 @@ let Home = () => {
             tools"
         />
       </FadeIn>
-      <FadeIn delay={0.3}>
+      <FadeIn delay={0.4}>
         
 
         <SectionLogoSlider />
       </FadeIn>
-      <FadeIn delay={0.4}>
+      <FadeIn delay={0.5}>
         <Heading className="mt-12">Case studies</Heading>
         <SectionCasestudy />
       </FadeIn>
