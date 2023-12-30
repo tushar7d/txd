@@ -242,6 +242,7 @@ let Home = () => {
             tools"
           />
           </GlowCapture>
+          
         </FadeIn>
 
         <FadeIn delay={0.5}>
