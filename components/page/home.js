@@ -79,9 +79,11 @@ let AboutMe = (props) => {
 };
 let CardHeader = (props) => {
   return (
-    <div className="mt-12 text-center h-[150px]">
+    <div className="mt-12 text-center  h-[150px]">
+     
       <div className="mb-1 text-xl ">{props.t}</div>
       <div className="font-serif text-4xl font-bold">{props.b}</div>
+
     </div>
   );
 };
