@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { motion, useInView } from "framer-motion"
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-
+import { GlowCapture, Glow } from "@codaworks/react-glow";
 let FadeIn = ({
   children,
   className,
   noVertical,
   delay,
   viewTriggerOffset,
-})=>{
+}) => {
   const ref = useRef(null);
   const inView = useInView(ref, {
     once: true,
@@ -24,8 +24,8 @@ let FadeIn = ({
       y: 0,
     },
   };
-  return(
-<motion.div
+  return (
+    <motion.div
       animate={inView ? "animate" : "initial"}
       className={className}
       initial={false}
@@ -39,40 +39,42 @@ let FadeIn = ({
     >
       {children}
     </motion.div>
-  )
-}
+  );
+};
 
 let AboutMe = (props) => {
   return (
-    <div
-      className={
-        "  mt-4  md:mx-0 md:mt-0 rounded-2xl sm:min-h-[320px]  md:flex md:justify-between md:items-center   "
-      }
-    >
-      <div className="mb-4 md:mb-0 md:order-last">
-        <img
-          src="/images/pic.png"
-          className="w-[200px] h-[200px] md:w-[250px] md:h-[250px]  mx-auto md:mx-0"
-        />
-      </div>
-
-      <div className="flex flex-col justify-between text-center  md:text-left md:w-[70%] ">
-        <h1 className="mb-2 font-serif text-6xl font-black text-transparent select-none md:text-7xl animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text">
-          {props.h}
-        </h1>
-        <div className="space-y-2 dark:text-white">
-          <p className="mt-3 text-xl md:text-2xl select-none">{props.d}</p>
+    <Glow className="purple">
+      <div
+        className={
+          "gloww  mt-4 turbopackCardBg p-12 md:mx-0 md:mt-0 rounded-2xl sm:min-h-[320px]  md:flex md:justify-between md:items-center   "
+        }
+      >
+        <div className="mb-4 md:mb-0 md:order-last">
+          <img
+            src="/images/pic.png"
+            className="w-[200px] h-[200px] md:w-[250px] md:h-[250px]  mx-auto md:mx-0"
+          />
         </div>
 
-        <div>
-          <Link href={"/about"}>
-            <button className="px-6 py-3 mx-auto mt-6 mb-6 bg-white  drop-shadow-lg  transition transform hover:subpixel-antialiased  hover:scale-105   rounded-full tetx-xl text-black font-serif font-semibold">
-              More about me
-            </button>
-          </Link>
+        <div className="flex flex-col justify-between text-center  md:text-left md:w-[70%] ">
+          <h1 className="mb-2 font-serif text-6xl font-black text-transparent select-none md:text-7xl animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text">
+            {props.h}
+          </h1>
+          <div className="space-y-2 dark:text-white">
+            <p className="mt-3 text-xl md:text-2xl select-none">{props.d}</p>
+          </div>
+
+          <div>
+            <Link href={"/about"}>
+              <button className="px-6 py-3 mx-auto mt-6 mb-6 bg-white  drop-shadow-lg  transition transform hover:subpixel-antialiased  hover:scale-105   rounded-full tetx-xl text-black font-serif font-semibold">
+                More about me
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+    </Glow>
   );
 };
 let CardHeader = (props) => {
@@ -95,7 +97,6 @@ let ExpansionInd = () => {
   return (
     <Link href="/work/expansion-india">
       <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card turbopackCardBg overflow-clip group hover:scale-105">
-       
         <CardHeader t="Revolut" b="Expansion" />
 
         <div className="relative w-full h-full ">
@@ -204,35 +205,49 @@ let RevOpb = () => {
 let SectionCasestudy = () => {
   return (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      
-     <FadeIn delay={0.5}> <ExpansionInd /> </FadeIn>
-     <FadeIn delay={0.6}> <RevSnap /> </FadeIn>
-     <FadeIn delay={0.7}> <ZomTrack /> </FadeIn>
-     <FadeIn delay={0.5}> <ExpCar /> </FadeIn>
-     <FadeIn delay={0.7}> <ZomPartner /> </FadeIn>
-     <FadeIn delay={0.9}> <RevOpb /> </FadeIn>
+      <FadeIn delay={0.5}>
+        <ExpansionInd />
+      </FadeIn>
+      <FadeIn delay={0.6}>
+        <RevSnap />
+      </FadeIn>
+      <FadeIn delay={0.7}>
+        <ZomTrack />
+      </FadeIn>
+      <FadeIn delay={0.5}>
+        <ExpCar />
+      </FadeIn>
+      <FadeIn delay={0.7}>
+        <ZomPartner />
+      </FadeIn>
+      <FadeIn delay={0.9}>
+        <RevOpb />
+      </FadeIn>
     </div>
   );
 };
 
 let Home = () => {
   return (
-    <section className="  max-w-[1140px] mx-auto mt-24 md:px-0 text-black">
-      <FadeIn delay={0.2}>
-      <AboutMe
-        h="Hello Everyone!"
-        d="I am Tushar Debnath a product designer and design technologist with
+    
+      <section className="  max-w-[1140px] mx-auto mt-24 md:px-0 text-black">
+        <FadeIn delay={0.2}>
+        <GlowCapture>
+          <AboutMe
+            h="Hello Everyone!"
+            d="I am Tushar Debnath a product designer and design technologist with
             10+ years of experience building products, design systems and design
             tools"
-      />
-      </FadeIn>
-      <FadeIn delay={0.5}>
-      <Heading className="mt-12">Case studies</Heading>
-      <SectionCasestudy />
-      </FadeIn>
+          />
+          </GlowCapture>
+        </FadeIn>
 
-     
-    </section>
+        <FadeIn delay={0.5}>
+          <Heading className="mt-12">Case studies</Heading>
+          <SectionCasestudy />
+        </FadeIn>
+      </section>
+    
   );
 };
 export default Home;

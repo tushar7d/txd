@@ -96,6 +96,9 @@ article.nextra-body-typesetting-article h4 {
   .project-card {
     @apply w-full h-[500px] bg-gray-100 rounded-xl p-6 overflow-hidden;
   }
+  .gloww {
+    @apply glow:ring-1 glow:border-purple-500/15 glow:ring-purple-500/15 glow:bg-purple-500/15;
+  }
 }
 
 .turbopackCardBg {
