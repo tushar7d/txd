@@ -2,6 +2,8 @@ import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { GlowCapture, Glow } from "@codaworks/react-glow";
+import Slider from "react-slick";
+
 let FadeIn = ({
   children,
   className,
@@ -43,6 +45,7 @@ let FadeIn = ({
 };
 
 let AboutMe = (props) => {
+  
   return (
     <Glow className="purple">
       <div
@@ -229,10 +232,48 @@ let SectionCasestudy = () => {
   );
 };
 
+let SectionLogoSlider = ()=>{
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  };
+  return(
+    <div className="mt-12">
+
+   
+    <Slider {...settings}>
+          <div>
+            <img src="/logo/Revolut.svg" />
+          </div>
+          <div>
+            <img src="/logo/Zomato.svg" />
+          </div>
+          
+          <div>
+            <img src="/logo/Expedia.svg" />
+          </div>
+          <div>
+            <img src="/logo/Hike.svg" />
+          </div>
+          <div>
+            <img src="/logo/Makemytrip.svg" />
+          </div>
+          
+          
+        </Slider>
+        </div>
+  )
+}
 let Home = () => {
+
+  
   return (
     
       <section className="  max-w-[1140px] mx-auto mt-24 md:px-0 text-black">
+        
         <FadeIn delay={0.2}>
         <GlowCapture>
           <AboutMe
@@ -244,7 +285,7 @@ let Home = () => {
           </GlowCapture>
           
         </FadeIn>
-
+<SectionLogoSlider />
         <FadeIn delay={0.5}>
           <Heading className="mt-12">Case studies</Heading>
           <SectionCasestudy />
