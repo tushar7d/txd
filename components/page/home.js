@@ -2,6 +2,7 @@ import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
+
 import Slider from "react-slick";
 
 let FadeIn = ({
@@ -46,37 +47,37 @@ let FadeIn = ({
 
 let AboutMe = (props) => {
   return (
-   
-        <div
-          className={
-            " mt-4  p-3 md:p-12 md:mx-0 md:mt-0 rounded-2xl sm:min-w-[320px]  md:flex md:justify-between md:items-center   "
-          }
-        >
-          <div className="mb-4 md:mb-0 md:order-last">
-            <img
-              src="/images/pic.png"
-              className="w-[200px] h-[200px] md:w-[250px] md:h-[250px]  mx-auto md:mx-0"
-            />
-          </div>
+    <div
+      className={
+        " mt-4  p-3 md:p-12 md:mx-0 md:mt-0 rounded-2xl sm:min-w-[320px]  md:flex md:justify-between md:items-center   "
+      }
+    >
+     
+      <div className="mb-4 md:mb-0 md:order-last">
+        <img
+          src="/images/pic.png"
+          className="w-[200px] h-[200px] md:w-[250px] md:h-[250px]  mx-auto md:mx-0"
+        />
+      </div>
 
-          <div className="flex flex-col justify-between text-center  md:text-left md:w-[70%] ">
-            <h1 className="mb-2 font-serif text-6xl font-black text-transparent select-none md:text-7xl animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text">
-              {props.h}
-            </h1>
-            <div className="space-y-2 dark:text-white">
-              <p className="mt-3 text-xl md:text-2xl select-none">{props.d}</p>
-            </div>
-
-            <div>
-              <Link href={"/about"}>
-                <button className="px-6 py-3 mx-auto mt-6 mb-6 bg-white  drop-shadow-lg  transition transform hover:subpixel-antialiased  hover:scale-105   rounded-full tetx-xl text-black font-serif font-semibold">
-                  More about me
-                </button>
-              </Link>
-            </div>
-          </div>
+      <div className="flex flex-col justify-between text-center  md:text-left md:w-[70%] ">
+        <h1 className="mb-2 font-serif text-6xl font-black text-transparent select-none md:text-7xl animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text">
+          {props.h}
+        </h1>
+        <div className="space-y-2 dark:text-white">
+          <p className="mt-3 text-xl md:text-2xl select-none">{props.d}</p>
         </div>
- 
+
+        <div className="mt-4">
+          <Link href={"/about"}>
+            <button className="px-6 py-3 mx-auto mt-6 mb-6 bg-white  drop-shadow-lg  transition transform hover:subpixel-antialiased  hover:scale-105   rounded-full tetx-xl text-black font-serif font-semibold">
+              More about me
+            </button>
+          </Link>
+          
+        </div>
+      </div>
+    </div>
   );
 };
 let CardHeader = (props) => {
@@ -233,14 +234,13 @@ let SectionLogoSlider = () => {
   const settings = {
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 8000,
+    speed: 4000,
 
     cssEase: "linear",
 
     infinite: true,
-
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
 
@@ -249,7 +249,7 @@ let SectionLogoSlider = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
         },
       },
       {
@@ -257,7 +257,7 @@ let SectionLogoSlider = () => {
         settings: {
           infinite: true,
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         },
       },
       {
@@ -270,10 +270,7 @@ let SectionLogoSlider = () => {
     ],
   };
   return (
-    <div className="mt-[100px] opacity-75 ">
-      <div className=" text-white text-center mb-12 ">
-          TRUSTED BY TEAMS FROM AROUND THE WORLD
-        </div>
+    <div className="mt-[150px] mb-[80px]  py-6   ">
       <Slider {...settings}>
         <div className="  w-full ">
           <img src="/logo/Revolut.svg" className=" mx-auto" />
@@ -297,18 +294,14 @@ let SectionLogoSlider = () => {
 };
 let Home = () => {
   return (
-    <section className="  max-w-[1140px] mx-auto mt-24 md:px-0 text-black">
+    <section className="  max-w-[1140px] mx-auto mt-24 md:px-0 z-10 text-black">
       <FadeIn delay={0.2}>
         <AboutMe
           h="Hello Everyone!"
-          d="I am Tushar Debnath a product designer and design technologist with
-            10+ years of experience building products, design systems and design
-            tools"
+          d="I'm Tushar Debnath, a product designer and design technologist with more than ten years of expertise in shaping products and creating impactful user experiences"
         />
       </FadeIn>
       <FadeIn delay={0.4}>
-        
-
         <SectionLogoSlider />
       </FadeIn>
       <FadeIn delay={0.5}>
