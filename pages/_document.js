@@ -1,13 +1,12 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import Navbar from "../components/Navbar";
+
 
 export default function Document() {
   return (
-    <Html lang="en" className="bg-[#111111]">
+    <Html lang="en">
       <Head />
-      
-      <body className="pb-[120px] relative">
-    
+
+      <body className="pb-[120px] bg-[#111111]">
         <Main />
         <NextScript />
       </body>

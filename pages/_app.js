@@ -1,7 +1,7 @@
 import "../style.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import localFont from "next/font/local";
-import Navbar from '../components/Navbar'
+import Navbar from "../components/Navbar";
 const recoleta = localFont({
   src: [
     {
@@ -41,16 +41,18 @@ const recoleta = localFont({
 
 export default function App({ Component, pageProps }) {
   return (
-    <ClerkProvider {...pageProps} appearance={{
-      elements: {
-        footer: "hidden",
-      },
-    }}>
+    <ClerkProvider
+      {...pageProps}
+      appearance={{
+        elements: {
+          footer: "hidden",
+        },
+      }}
+    >
       <Navbar />
-    <main  className={` bg-[#111111]  ${recoleta.variable} relative scrollbar-hide pt-[80px]`}>
-
-      <Component {...pageProps} />
-    </main>
+      <main className={` ${recoleta.variable} relative scrollbar-hide`}>
+        <Component {...pageProps} />
+      </main>
     </ClerkProvider>
   );
 }
