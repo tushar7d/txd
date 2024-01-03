@@ -17,7 +17,7 @@ let Navbar = () => {
           >
             Home
           </a>
-          
+
           <a
             className={`${
               router.pathname == "/blog" ? "font-semibold" : "text-white"
@@ -34,9 +34,49 @@ let Navbar = () => {
           >
             About
           </a>
-        
         </div>
-        <div className="flex md:hidden">Menu</div>
+        <div className="flex md:hidden">
+          <div className="dropdown dropdown-bottom dropdown-end">
+            <div tabIndex={0} role="button" className="">
+              Menu
+            </div>
+            <ul
+              tabIndex={0}
+              className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a
+                  className={`${
+                    router.pathname == "/" ? "font-semibold" : "text-white"
+                  }`}
+                  href="/"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  className={`${
+                    router.pathname == "/blog" ? "font-semibold" : "text-white"
+                  }`}
+                  href="/blog"
+                >
+                  Writing
+                </a>
+              </li>
+              <li>
+                <a
+                  className={`${
+                    router.pathname == "/about" ? "font-semibold" : "text-white"
+                  }`}
+                  href="/about"
+                >
+                  About
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
