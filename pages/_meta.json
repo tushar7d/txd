@@ -6,11 +6,7 @@
       "layout": "raw"
     }
   },
-  "work": {
-    "title": "Work",
-    "type": "page"
-  
-  },
+ 
   "blog": {
     "title": "Writing",
     "type": "page"
