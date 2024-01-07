@@ -276,7 +276,7 @@ let SectionLogoSlider = () => {
     ],
   };
   return (
-    <div className="mt-[150px] mb-[80px]  py-6   ">
+    <div className="mt-[20px] mb-[80px]  py-6   ">
       <Slider {...settings}>
         <div className="  w-full ">
           <img src="/logo/Revolut.svg" className=" mx-auto" />
