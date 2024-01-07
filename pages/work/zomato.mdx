@@ -1,5 +1,8 @@
-# Zomato Order Tracker
+import MyGallery from '../../components/MyGallery'
+import { Gallery, Item } from 'react-photoswipe-gallery'
 
+# Zomato Order Tracker
+<Gallery>
 
 <img src="/zom/crystal.png" className="my-3 rounded-xl" />
 
@@ -26,7 +29,8 @@ Grocery delivery, and Medicine Delivery.
 This approach focused on simplicity and communicating the order status with
 elegant conversational copy and color association.
 
-<img src="/zom/onex.png" className="my-3 rounded-xl w-full" />
+<MyGallery img="/zom/onex.png" w="3480" h="2027" />
+
 
 
 
@@ -34,7 +38,7 @@ elegant conversational copy and color association.
 This approach focused on complete transperency and showed a detailed tracker accesible through 
 progressive disclosure.
 
-<img src="/zom/twox.png" className="my-3 rounded-xl w-full  " />
+<MyGallery img="/zom/twox.png" w="3440" h="2973" />
 
 
 
@@ -54,11 +58,12 @@ As of now Approach 1 is currently Live and is now the new order tracker for Zoma
 ## Scalability
 We designed both the approaches to be scalable. The entire system is build using components,
 autolayout and variants with 1:1 mapping to code, here are a few examples.
+</Gallery>
 
-<video className="mt-6 rounded-xl" width="960" height="720"  autoPlay loop>
+<video className="mt-6 rounded-xl" width="960" height="720"  autoPlay loop controls>
   <source src="/zom/sf2.mp4" type="video/mp4" />
   </video>
 
-<video className="mt-6 rounded-xl" width="960" height="720"  autoPlay loop>
+<video className="mt-6 rounded-xl" width="960" height="720"  autoPlay loop controls>
   <source src="/zom/sf1.mp4" type="video/mp4" />
   </video>

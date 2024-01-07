@@ -2,6 +2,7 @@ import "../style.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import localFont from "next/font/local";
 import Navbar from "../components/Navbar";
+import 'photoswipe/dist/photoswipe.css'
 const recoleta = localFont({
   src: [
     {
