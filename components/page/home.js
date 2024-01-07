@@ -187,22 +187,24 @@ let ZomPartner = () => {
     </div>
   );
 };
-let RevOpb = () => {
+let RevWealthPro = () => {
   return (
+    <Link href="/work/wealth-pro">
     <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-white/5 hover:scale-105 group">
-      <CardHeader t="Revolut" b="Open Banking" />
+      <CardHeader t="Revolut" b="Wealth Protection" />
       <div className="relative w-full h-full transition ease-in-out md:group-hover:-translate-y-6 ">
         <div>
-          <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   md:group-hover:translate-x-8 right-0 top-12 md:group-hover:rotate-6 transition ease-out duration-300   " />
+          <div className="bg-[url('/wp/01.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   md:group-hover:translate-x-8 right-0 top-12 md:group-hover:rotate-6 transition ease-out duration-300   " />
         </div>
         <div>
-          <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0 right-0 md:group-hover:-translate-x-8 top-12 md:group-hover:-rotate-6 transition ease-out duration-300  " />
+          <div className="bg-[url('/wp/02.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0 right-0 md:group-hover:-translate-x-8 top-12 md:group-hover:-rotate-6 transition ease-out duration-300  " />
         </div>
         <div>
-          <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto left-0 right-0 top-4 transition ease-out duration-300" />
+          <div className="bg-[url('/wp/03.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto left-0 right-0 top-4 transition ease-out duration-300" />
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 let SectionCasestudy = () => {
@@ -215,17 +217,19 @@ let SectionCasestudy = () => {
         <RevSnap />
       </FadeIn>
       <FadeIn delay={0.4}>
-        <ZomTrack />
+        <RevWealthPro />
       </FadeIn>
       <FadeIn delay={0.2}>
+        <ZomTrack />
+      </FadeIn>
+  
+      <FadeIn delay={0.3}>
         <ExpCar />
       </FadeIn>
-      <FadeIn delay={0.3}>
+      <FadeIn delay={0.4}>
         <ZomPartner />
       </FadeIn>
-      <FadeIn delay={0.4}>
-        <RevOpb />
-      </FadeIn>
+      
     </div>
   );
 };
