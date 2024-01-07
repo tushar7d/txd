@@ -171,6 +171,7 @@ let ExpCar = () => {
 
 let ZomPartner = () => {
   return (
+    <Link href="/work/partner-app">
     <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-white/5 hover:scale-105 group">
       <CardHeader t="Zomato" b="Partner App" />
       <div className="relative w-full h-full ">
@@ -185,6 +186,7 @@ let ZomPartner = () => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 let RevWealthPro = () => {
