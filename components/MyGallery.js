@@ -11,7 +11,7 @@ const MyGallery = (prop) => (
       height={prop.h}
     >
       {({ ref, open }) => (
-        <img ref={ref} onClick={open} className=' rounded-md mx-auto  mt-6   hover:cursor-pointer' src={prop.img} />
+        <img ref={ref} onClick={open} className=' rounded-md mx-auto  mt-6   hover:cursor-pointer' src={"/low" +prop.img} />
       )}
     </Item>
    
