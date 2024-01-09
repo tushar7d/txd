@@ -3,6 +3,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import localFont from "next/font/local";
 import Navbar from "../components/Navbar";
 import 'photoswipe/dist/photoswipe.css'
+import { Analytics } from '@vercel/analytics/react';
 const recoleta = localFont({
   src: [
     {
@@ -42,7 +43,8 @@ const recoleta = localFont({
 
 export default function App({ Component, pageProps }) {
   return (
-    <ClerkProvider
+    <>
+     <ClerkProvider
       {...pageProps}
       appearance={{
         elements: {
@@ -55,5 +57,8 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </main>
     </ClerkProvider>
+    <Analytics />
+    </>
+   
   );
 }

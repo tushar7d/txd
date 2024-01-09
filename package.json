@@ -22,6 +22,7 @@
     "@cloudinary/react": "^1.11.2",
     "@cloudinary/url-gen": "^1.14.0",
     "@codaworks/react-glow": "^1.0.5",
+    "@vercel/analytics": "^1.1.1",
     "classnames": "^2.5.1",
     "cookie": "^0.6.0",
     "framer-motion": "^10.16.16",
