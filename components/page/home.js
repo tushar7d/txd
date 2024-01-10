@@ -80,6 +80,15 @@ let AboutMe = (props) => {
     </div>
   );
 };
+
+let Locked = (props) =>{
+  return(
+    <div className="relative top-6 left-6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+  </svg>
+  </div>
+  )
+}
 let CardHeader = (props) => {
   return (
     <div className="mt-12 text-center  h-[150px]">
@@ -100,6 +109,7 @@ let ExpansionInd = () => {
   return (
     <Link href="/work/expansion-india">
       <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-white/5  overflow-clip group hover:scale-105">
+        <Locked />
         <CardHeader t="Revolut" b="Building for India" />
 
         <div className="relative w-full h-full ">
@@ -121,6 +131,7 @@ let RevSnap = () => {
   return (
     <Link href="/work/building-snap">
       <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-white/5 group hover:scale-105">
+      <Locked />
         <CardHeader t="Revolut" b="Snap App" />
         <div className="bg-[url('/images/snapcov.png')]  w-[500px]  h-full md:h-full ml-24 md:ml-16  mb-4  bg-contain bg-no-repeat md:group-hover:-translate-x-8 transition ease-out duration-300" />
       </div>
@@ -130,7 +141,11 @@ let RevSnap = () => {
 let ZomTrack = () => {
   return (
     <Link href="/work/zomato">
+      
       <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-white/5 group hover:scale-105">
+      
+
+      
         <CardHeader t="Zomato" b="Order Tracker" />
         <div className="relative w-full h-full ">
           <div>
@@ -193,6 +208,7 @@ let RevWealthPro = () => {
   return (
     <Link href="/work/wealth-pro">
     <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-white/5 hover:scale-105 group">
+    <Locked />
       <CardHeader t="Revolut" b="Wealth Protection" />
       <div className="relative w-full h-full transition ease-in-out md:group-hover:-translate-y-6 ">
         <div>
@@ -212,11 +228,12 @@ let RevWealthPro = () => {
 let SectionCasestudy = () => {
   return (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <FadeIn delay={0.2}>
-        <ExpansionInd />
-      </FadeIn>
+       
       <FadeIn delay={0.3}>
         <RevSnap />
+      </FadeIn>
+      <FadeIn delay={0.2}>
+        <ExpansionInd />
       </FadeIn>
       <FadeIn delay={0.4}>
         <RevWealthPro />
@@ -224,14 +241,12 @@ let SectionCasestudy = () => {
       <FadeIn delay={0.2}>
         <ZomTrack />
       </FadeIn>
-  
       <FadeIn delay={0.3}>
         <ExpCar />
       </FadeIn>
       <FadeIn delay={0.4}>
         <ZomPartner />
       </FadeIn>
-      
     </div>
   );
 };
