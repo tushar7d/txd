@@ -1,17 +1,17 @@
 let IconSet = ()=>{
     return(
-  <div className="flex items-baseline justify-center  space-x-6 text-xs md:justify-start lg:mt-0 ">
+  <div className="flex items-baseline justify-center  space-x-6 text-xs md:justify-start lg:mt-[2px]  border-l pl-3 border-white/25">
  
                 <a
-                  className=" text-black no-underline dark:text-white "
+                  className=" text-black no-underline dark:text-white hover:text-blue-500"
                   target="_blank"
                   href="https://www.linkedin.com/in/tushardebnath/"
                   aria-label="Linked In Profile"
                   data-splitbee-event="linkedin"
                 >
                   <svg
-                    width="20"
-                    height="20"
+                    width="18"
+                    height="18"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -23,15 +23,15 @@ let IconSet = ()=>{
                   </svg>
                 </a>
                 <a
-                  className=" text-black no-underline dark:text-white"
+                  className=" text-black no-underline dark:text-white hover:text-blue-500"
                   target="_blank"
                   href="https://dribbble.com/tushardebnath"
                   aria-label="Dribble Profile"
                   data-splitbee-event="dribbble"
                 >
                   <svg
-                    width="20"
-                    height="20"
+                       width="18"
+                       height="18"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -43,16 +43,16 @@ let IconSet = ()=>{
                   </svg>
                 </a>
                 <a
-                  className=" text-black no-underline dark:text-white"
+                  className=" text-black no-underline dark:text-white hover:text-blue-500"
                   target="_blank"
                   href="https://github.com/tushar7d"
                   aria-label="Github Profile"
                   data-splitbee-event="github"
                 >
-                  {" "}
+                 
                   <svg
-                    width="20"
-                    height="20"
+                     width="18"
+                     height="18"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"

@@ -5,14 +5,14 @@ let Navbar = () => {
   const router = useRouter();
   return (
     <div className="fixed z-50 w-screen px-3 backdrop-blur-md bg-[#111111]/30 shadow-sm">
-      <div className="max-w-[1180px] flex justify-between items-center h-[60px] px-6   mx-auto  ">
+      <div className="max-w-[1180px] flex justify-between items-center h-[60px] px-6   mx-auto   font-semibold ">
         <a href="/">
           <Logo />
         </a>
         <div className="hidden space-x-6 md:flex">
           <a
             className={`${
-              router.pathname == "/" ? "font-semibold" : "text-white"
+              router.pathname == "/" ? " text-blue-500" : "text-white hover:text-blue-500"
             }`}
             href="/"
           >
@@ -21,7 +21,7 @@ let Navbar = () => {
 
           <a
             className={`${
-              router.pathname == "/blog" ? "font-semibold" : "text-white"
+              router.pathname == "/blog" ? "text-blue-500" : "text-white hover:text-blue-500"
             }`}
             href="/blog"
           >
@@ -29,7 +29,7 @@ let Navbar = () => {
           </a>
           <a
             className={`${
-              router.pathname == "/about" ? "font-semibold" : "text-white"
+              router.pathname == "/about" ? "text-blue-500" : "text-white hover:text-blue-500"
             }`}
             href="/about"
           >
@@ -52,7 +52,7 @@ let Navbar = () => {
               <li>
                 <a
                   className={`${
-                    router.pathname == "/" ? "font-semibold" : "text-white"
+                    router.pathname == "/" ? "text-blue-500" : "text-white"
                   }`}
                   href="/"
                 >
@@ -62,7 +62,7 @@ let Navbar = () => {
               <li>
                 <a
                   className={`${
-                    router.pathname == "/blog" ? "font-semibold" : "text-white"
+                    router.pathname == "/blog" ? "text-blue-500" : "text-white"
                   }`}
                   href="/blog"
                 >
@@ -72,7 +72,7 @@ let Navbar = () => {
               <li>
                 <a
                   className={`${
-                    router.pathname == "/about" ? "font-semibold" : "text-white"
+                    router.pathname == "/about" ? "text-blue-500" : "text-white"
                   }`}
                   href="/about"
                 >
