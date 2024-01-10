@@ -131,7 +131,7 @@ let RevSnap = () => {
   return (
     <Link href="/work/building-snap">
       <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-white/5 group hover:scale-105">
-      <Locked />
+      
         <CardHeader t="Revolut" b="Snap App" />
         <div className="bg-[url('/images/snapcov.png')]  w-[500px]  h-full md:h-full ml-24 md:ml-16  mb-4  bg-contain bg-no-repeat md:group-hover:-translate-x-8 transition ease-out duration-300" />
       </div>
