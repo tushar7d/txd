@@ -7,7 +7,7 @@ export default function Page() {
         This case study is locked
       </div>
       <div className="text-white/75 text-xl text-center mb-12">
-        Reach out to me to get access
+        <a className="text-blue-500" href="https://www.linkedin.com/in/tushardebnath/" target="_blank" >Reach out</a> to get access
       </div>
       <SignIn />
     </div>
