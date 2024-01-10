@@ -292,7 +292,9 @@ let SectionLogoSlider = () => {
     ],
   };
   return (
-    <div className="mt-[20px] mb-[80px]  py-6   ">
+    <div className="mt-[20px] mb-[80px]  py-6    relative">
+      <div className=" absolute top-0 left-0 w-[60px]  h-full bg-gradient-to-r from-[#111111] to-[#11111100] z-10" />
+      <div className=" absolute top-0 right-0 w-[60px]  h-full bg-gradient-to-r from-[#11111100] to-[#111111] z-10" />
       <Slider {...settings}>
         <div className="  w-full ">
           <img src="/logo/Revolut.svg" className=" mx-auto" />
