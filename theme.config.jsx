@@ -1,23 +1,33 @@
 import React from "react";
-
+import { useRouter } from 'next/router'
+import { useConfig } from 'nextra-theme-docs'
 import Logo from "./components/logo";
 
 
 const config = {
+  useNextSeoProps() {
+    const { asPath } = useRouter()
+    if (asPath !== '/') {
+      return {
+        titleTemplate: '%s – Tushar Debnath'
+      }
+    }
+  },
   head: () => {
+    const { asPath, defaultLocale, locale } = useRouter()
+    const { frontMatter } = useConfig()
+    const url =
+      'https://tushardebnath.com' +
+      (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
     return (
       <>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tushar Debnath</title>
-        <meta property="og:title" content="Tushar Debnath" />
-        <meta property="og:site_name" content="Tushar Debnath" />
-        <meta property="og:url" content="https://tushardebnath.com" />
-        <meta property="og:image" content="https://tushardebnath.com/og.png" />
+       <title>{frontMatter.title+ " | Tushar Debnath" || 'Tushar Debnath'}</title>
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={frontMatter.title} />
         <meta
           property="og:description"
-          content="Product designer and developer from New Delhi"
+          content={frontMatter.description || 'Tushar Debnath'}
         />
-        <meta property="og:type" content="website" />
       </>
     );
   },
