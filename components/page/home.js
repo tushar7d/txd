@@ -229,7 +229,15 @@ let RevWealthPro = () => {
 let SectionCasestudy = () => {
   return (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-       
+        <FadeIn delay={0.2}>
+        <ExpansionInd />
+      </FadeIn>
+      <FadeIn delay={0.3}>
+        <RevSnap />
+      </FadeIn>
+      <FadeIn delay={0.4}>
+        <RevWealthPro />
+      </FadeIn>
       
       <FadeIn delay={0.2}>
         <ZomTrack />
