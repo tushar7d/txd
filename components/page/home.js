@@ -109,7 +109,7 @@ let ExpansionInd = () => {
   return (
     <Link href="/work/expansion-india">
       <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-white/5  overflow-clip group hover:scale-105">
-        <Locked />
+       
         <CardHeader t="Revolut" b="Building for India" />
 
         <div className="relative w-full h-full ">
@@ -209,7 +209,7 @@ let RevWealthPro = () => {
   return (
     <Link href="/work/wealth-pro">
     <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-white/5 hover:scale-105 group">
-    <Locked />
+   
       <CardHeader t="Revolut" b="Wealth Protection" />
       <div className="relative w-full h-full transition ease-in-out md:group-hover:-translate-y-6 ">
         <div>
